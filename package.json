@@ -1,0 +1,28 @@
+{
+  "name": "node-es6-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "babel-node ./src/index.js --presets @babel/env",
+    "test": "ava ./test/*.test.js -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "ava": {
+    "require":[
+      "@babel/register"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "ava": "1.0.0-beta.8",
+    "nodemon": "^1.18.4"
+  },
+  "dependencies": {
+    "@babel/register": "^7.0.0"
+  }
+}
