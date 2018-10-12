@@ -1,6 +1,5 @@
 import test from 'ava'
-import Parser from '../src/parser'
-import apiDescription from './api_description'
+import Parser from '../src/Parser'
 
 test('should parse simple list resource', t => {
   const path = 'first'
